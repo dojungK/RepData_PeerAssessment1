@@ -5,7 +5,7 @@ output:
     keep_md: true
 ---
 
-```{r setoptions, echo=TRUE}
+```{r setoptions, echo=TRUE, results='asis'}
 #Setting global options
 ```
 
