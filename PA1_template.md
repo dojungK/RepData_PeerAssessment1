@@ -28,7 +28,7 @@ steps_pday <- tapply(actdata$steps, actdata$date, sum)
 hist(steps_pday, main = "Total number of Steps taken each Day", xlab = "Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-2-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-2-1.png?raw=true)<!-- -->
  
  2.Calculate and report the mean and median total number of steps taken per day
 
@@ -83,7 +83,7 @@ ndt <- actdata %>%
 plot(ndt$interval, ndt$averaged_steps, type = "l", main = "Averaged steps across all days", xlab = "Interval", ylab = "Average number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-4-1.png?raw=true)<!-- -->
 
 
  2. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -167,7 +167,7 @@ replaced_steps_pday <-
 hist(replaced_steps_pday, main = "Replaced total number of Steps taken each Day", xlab = "Steps per Day")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png?raw=true)<!-- -->
 
 ```r
 # mean
@@ -244,4 +244,4 @@ week_data <- factor_data %>%
 qplot(interval, averaged_steps, data = week_data, geom = "path", facets = day~., ylab = "Number of steps", xlab = "Interval", main = "Differences in activity patterns between weekdays and weekends")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png?raw=true)<!-- -->
